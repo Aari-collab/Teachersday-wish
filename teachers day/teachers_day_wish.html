@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Teachers' Day 💐</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:linear-gradient(135deg,#fff4d6,#ffe3ec,#e7ddff);
+  color:#34243f;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:30px 18px;
+  text-align:center;
+  position:relative;
+}
+.card{
+  width:min(900px,94vw);
+  padding:42px 25px;
+  border-radius:30px;
+  background:rgba(255,255,255,.78);
+  box-shadow:0 20px 60px rgba(60,30,80,.18);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.8);
+}
+.badge{
+  display:inline-block;
+  padding:8px 16px;
+  border-radius:30px;
+  background:#fff;
+  font-size:14px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+h1{
+  font-size:clamp(42px,8vw,78px);
+  margin:18px 0 10px;
+}
+.subtitle{
+  font-size:clamp(17px,3vw,23px);
+  line-height:1.6;
+  max-width:720px;
+  margin:0 auto 25px;
+}
+.flowers{font-size:40px;letter-spacing:8px}
+.section{padding:65px 18px}
+.section h2{text-align:center;font-size:38px;margin-bottom:35px}
+.teachers{
+  width:min(1000px,94vw);
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px;
+}
+.teacher{
+  background:rgba(255,255,255,.82);
+  border-radius:22px;
+  padding:25px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(50,30,70,.10);
+  transition:.25s;
+}
+.teacher:hover{transform:translateY(-6px)}
+.icon{font-size:40px}
+.teacher h3{margin:12px 0 7px;font-size:22px}
+.teacher p{margin:0;opacity:.72}
+.message{
+  width:min(850px,94vw);
+  margin:auto;
+  background:rgba(255,255,255,.82);
+  border-radius:28px;
+  padding:35px 28px;
+  text-align:center;
+  line-height:1.8;
+  font-size:18px;
+  box-shadow:0 12px 35px rgba(50,30,70,.12);
+}
+.message strong{font-size:23px}
+.footer{text-align:center;padding:35px 15px 55px;font-size:15px;opacity:.7}
+.music{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:5;
+  border:0;
+  border-radius:50px;
+  padding:13px 18px;
+  background:#34243f;
+  color:#fff;
+  cursor:pointer;
+  box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
+.confetti{
+  position:fixed;
+  top:-20px;
+  font-size:22px;
+  animation:fall linear infinite;
+  pointer-events:none;
+}
+@keyframes fall{
+  to{transform:translateY(110vh) rotate(360deg)}
+}
+@media(max-width:500px){
+  .card{padding:34px 18px}
+  .section h2{font-size:30px}
+}
+</style>
+</head>
+<body>
+
+<audio id="song" src="last_7_minutes.mp3" autoplay loop preload="auto"></audio>
+<button class="music" id="musicBtn">🎵 Play Music</button>
+
+<section class="hero">
+  <div class="card">
+    <div class="badge">5 SEPTEMBER • TEACHERS' DAY</div>
+    <div class="flowers">🌸 📚 🌼</div>
+    <h1>Happy Teachers' Day! 💐</h1>
+    <p class="subtitle">
+      To the teachers who don't just teach lessons from books,
+      but also teach us how to learn, grow and become better every day.
+    </p>
+    <div class="flowers">✨ Thank You, Teachers! ✨</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Our Amazing Teachers 👩🏻‍🏫👨🏻‍🏫</h2>
+  <div class="teachers">
+    <div class="teacher">
+      <div class="icon">🎓</div>
+      <h3>Ranjith Sir</h3>
+      <p>HOD</p>
+    </div>
+    <div class="teacher">
+      <div class="icon">💻</div>
+      <h3>Amuthavalli Mam</h3>
+      <p>Class Tutor • C Subject</p>
+    </div>
+    <div class="teacher">
+      <div class="icon">🖥️</div>
+      <h3>Keerthana Mam</h3>
+      <p>DFCA</p>
+    </div>
+    <div class="teacher">
+      <div class="icon">📐</div>
+      <h3>Maheswari Mam</h3>
+      <p>Mathematics</p>
+    </div>
+    <div class="teacher">
+      <div class="icon">📖</div>
+      <h3>Ragul Sir</h3>
+      <p>English</p>
+    </div>
+    <div class="teacher">
+      <div class="icon">📝</div>
+      <h3>Nagaraj Sir</h3>
+      <p>Tamil</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>A Little Thank You 💛</h2>
+  <div class="message">
+    <strong>Dear Teachers,</strong><br><br>
+    Thank you for your patience, guidance and for believing in us.
+    Every class, every correction and every piece of advice helps us
+    move one step forward. We may not say it every day,
+    but we truly appreciate everything you do for us.
+    <br><br>
+    <strong>Happy Teachers' Day! 🌷</strong><br>
+    With respect and gratitude — <b>Aari</b> &amp; Class 💐
+  </div>
+</section>
+
+<div class="footer">Made with ❤️ as a small Teachers' Day surprise.</div>
+
+<script>
+const song = document.getElementById("song");
+const btn = document.getElementById("musicBtn");
+
+function updateButton(){
+  btn.textContent = song.paused ? "🎵 Play Music" : "🔊 Music On";
+}
+btn.onclick = async () => {
+  if(song.paused) {
+    try { await song.play(); } catch(e) {}
+  } else {
+    song.pause();
+  }
+  updateButton();
+};
+
+window.addEventListener("load", async () => {
+  try { await song.play(); } catch(e) {
+    // Modern browsers may block autoplay with sound.
+  }
+  updateButton();
+});
+
+const emojis=["🌸","✨","💐","🌼","⭐"];
+for(let i=0;i<18;i++){
+  const el=document.createElement("div");
+  el.className="confetti";
+  el.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+  el.style.left=Math.random()*100+"vw";
+  el.style.animationDuration=(5+Math.random()*6)+"s";
+  el.style.animationDelay=(-Math.random()*8)+"s";
+  document.body.appendChild(el);
+}
+</script>
+</body>
+</html>
